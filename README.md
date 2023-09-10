@@ -81,6 +81,10 @@ language and RabbitMQ or Kafka.
 
 >To run Consumer use **go run ./consumer/main.go ./consumer/consumer.go** and to terminate use **control + c**
 
+>To run any test case for a package please enter into the package and use **go test -v** else you can do it from the origin of the code as well like below. You can also check for coverage and benchmark test. 
+  1. go test ./consumer/. -v
+  2. go test ./model/. -v 
+
 
 **Note:-** 
 1. Here Image_store used to store array of product_images comes from Api and compressed_product_images path.
@@ -90,3 +94,5 @@ language and RabbitMQ or Kafka.
   
     brew install pngquant
     brew install mozjpeg
+
+Lastly it is just a simplefied version developed and there can be a lot of modifications or enhancements possible as per the requirment.
