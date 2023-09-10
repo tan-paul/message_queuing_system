@@ -1,14 +1,14 @@
-# api contract from Message Queuing System
+# api contract for Message Queuing System
 
-# url :- 
+## url :- 
 ```
 POST http://localhost:8080/product_info
 ```
 
-# sample I/p I
+## sample I/p I
 
 ```json
-    {
+{
     "user_id":2,
     "product_name":"chukchuki",
     "product_description":"it's afunny product for babies",
@@ -26,9 +26,9 @@ POST http://localhost:8080/product_info
     "product_price":3456
 }
 ```
-# sample o/p I
+## sample o/p I
 
-# status code :- 201Created
+### status code :- 201Created
 
 ```json
 {
@@ -36,19 +36,19 @@ POST http://localhost:8080/product_info
 }
 ```
 
-# sample I/p II
+## sample I/p II
 
 ```json
-    {
+{
     "user_id":1,
     "product_name":"chukchuki",
     "product_description":"it's afunny product for babies",
     "product_price":3765678
 }
 ```
-# sample o/p II
+## sample o/p II
 
-# status :- 400Bad Request
+### status :- 400Bad Request
 
 ```json
 {
