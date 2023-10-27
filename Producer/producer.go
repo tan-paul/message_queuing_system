@@ -14,6 +14,7 @@ func (pr *Producer) InsertIntoQueue(product_id int64) error {
 	if err != nil {
 		return err
 	}
+	defer ch.Close()
 	err = ch.Publish(
 		"Product_Message_Exchange", // exchange name
 		"Product_Message_Queue",    // routing key
